@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<div class="container">
+    {% include navi.html %}
+    {% include header.html %}
+    <section class="main clearfix">
+        <main class="content float-left">
+            {{ content }}
+        </main>
+        {% include table-of-recent-articles.html %}
+    </section>
+    {% include footer.html %}
+</div>
+</html>
