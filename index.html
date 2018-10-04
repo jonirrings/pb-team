@@ -23,13 +23,15 @@ route: index
 </ul>
 <p>
     {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-    <a href="/">&lt;</a>
-    {% else %}
-    <a href="/{{ paginator.previous_page }}">&lt;</a>
+        {% if paginator.previous_page == 1 %}
+        <a href="/">&lt;</a>
+        {% else %}
+        <a href="/{{ paginator.previous_page }}">&lt;</a>
+        {% endif %}
     {% endif %}
-    {% endif %}
+
     {{ paginator.page }}
+    
     {% if paginator.next_page %}
     <a href="/{{ paginator.next_page  }}">&gt;</a>
     {% endif %}
