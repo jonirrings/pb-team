@@ -23,8 +23,14 @@ kramdown:
   input: GFM
 sass:
   style: expanded
+paginate: 4
+paginate_path: "/:num"
 exclude: ['images/original']
-permalink: :title.html
+permalink: :title
+
+plugins:
+- jekyll-feed
+- jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

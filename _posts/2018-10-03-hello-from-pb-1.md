@@ -1,8 +1,6 @@
 ---
 layout: post
-title:  "Hello"
+title:  "Hello from PB"
 ---
-
-# Hello
 
 this is the first message from PB
