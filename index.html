@@ -13,7 +13,7 @@ route: index
             <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
         </div>
         <div class="NewsSummaryContent">
-            {{ post.excerpt }}
+            {{ post.content | truncatehtml | truncatewords: 60 }}
         </div>
         <div class="NewsSummaryPostdate">
             {{ post.date | date: "%Y-%m-%d" }}
